@@ -1,4 +1,4 @@
-﻿<skin>
+<skin>
   <!--copyright>
     <orginal author="Franc" license="Adrenalinnrw_Mod_RED PowerBoard Enigma2 Skin (and only for PB-Images!!!)" name="Adrenalinnrw_Mod_RED" supporturl="www.pb-powerboard.com" version="1.86" />
     Modified by Adrenalinnrw For Dreambox OE1.6 & OE2.0 Mod.OpenESi
@@ -165,9 +165,9 @@
     <widget source="session.Event_Next" render="Label" borderWidth="2" position="70,683" size="450,30" halign="left" font="Ado; 22" foregroundColor="grey" backgroundColor="black" transparent="1" valign="center" noWrap="1">
       <convert type="EventName">Name</convert>
     </widget>
-    <widget source="session.Event_Now" render="Label" borderWidth="2" position="73,628" size="400,40" halign="left" font="Ado; 22" transparent="1" noWrap="1" backgroundColor="black" valign="center" zPosition="1" foregroundColor="red_tux1">
-      <convert type="EventName">Name</convert>
-    </widget>
+    <widget source="session.Event_Now" render="Label" borderWidth="2" position="102,628" size="371,40" halign="left" font="Ado; 22" transparent="1" noWrap="1" backgroundColor="black" valign="center" zPosition="1" foregroundColor="red_tux1">
+  <convert type="EventName">Name</convert>
+</widget>
     <widget source="session.Event_Now" render="Label" position="408,628" size="110,40" halign="right" font="Ado; 20" backgroundColor="bpWindowTraka" transparent="1" valign="center" zPosition="1">
       <convert type="EventTime">Remaining</convert>
       <convert type="RemainingToText">InMinutes</convert>
@@ -183,9 +183,9 @@
     </widget>
     <ePixmap name="bPPodloga" position="0,2" size="1280,720" pixmap="Adrenalinnrw_Mod_RED/infobar/infobar_down1.png" zPosition="-3" alphatest="off" />
     <ePixmap position="4,664" size="520,19" zPosition="5" pixmap="Adrenalinnrw_Mod_RED/infobar/infobar_event_slider_back1.png" alphatest="blend" transparent="1" />
-    <widget source="global.CurrentTime" borderWidth="2" render="Label" position="896,675" size="350,37" font="Ado; 28" valign="center" halign="left" backgroundColor="black" transparent="1" foregroundColor="foreground" zPosition="2">
-  <convert type="ClockToText">Format:%a, %e. %B %Y | %H:%M</convert>
-</widget>
+    <widget source="global.CurrentTime" borderWidth="2" render="Label" position="902,1" size="350,37" font="Ado; 28" valign="center" halign="left" backgroundColor="black" transparent="1" foregroundColor="foreground" zPosition="2">
+      <convert type="ClockToText">Format:%a, %e. %B %Y | %H:%M</convert>
+    </widget>
     <widget position="74,590" size="460,36" source="session.CurrentService" render="TypeLabel" typeSpeed="1500" typeCaret="_" font="Ado; 30" valign="center" halign="left" noWrap="1" backgroundColor="white" shadowColor="#000000" shadowOffset="-1,-1" transparent="1" foregroundColor="white">
       <convert type="ServiceName2">%N</convert>
     </widget>
@@ -278,10 +278,10 @@
       <convert type="ServiceInfo">Is4K</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-<widget source="session.CurrentService" render="Pixmap" pixmap="Adrenalinnrw_Mod_RED/icons/ico_iptv_on.png" position="860,630" size="81,45" zPosition="2" alphatest="blend">
-			<convert type="ServiceInfo">IsStream</convert>
-			<convert type="ConditionalShowHide" />
-		</widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="Adrenalinnrw_Mod_RED/icons/ico_iptv_on.png" position="1032,678" size="81,45" zPosition="2" alphatest="blend">
+      <convert type="ServiceInfo">IsStream</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
     <widget source="session.CurrentService" render="Pixmap" pixmap="Adrenalinnrw_Mod_RED/icons/ico_dolby_on.png" position="949,630" size="81,40" zPosition="3" alphatest="blend">
       <convert type="ServiceInfo">IsMultichannel</convert>
       <convert type="ConditionalShowHide" />
@@ -462,12 +462,9 @@
       <convert type="ConditionalShowHide">Blink</convert>
     </widget>
     <ePixmap position="4,664" size="520,19" zPosition="5" pixmap="Adrenalinnrw_Mod_RED/infobar/infobar_event_slider_back1.png" alphatest="blend" transparent="1" />
-    <widget source="global.CurrentTime" borderWidth="2" render="Label" position="896,675" size="350,37" font="Ado; 28" valign="center" halign="left" backgroundColor="black" transparent="1" foregroundColor="foreground" zPosition="2">
-  <convert type="ClockToText">Format:%a, %e. %B %Y | %H:%M</convert>
-</widget>
     <widget position="74,590" size="460,36" source="session.CurrentService" render="TypeLabel" typeSpeed="1500" typeCaret="_" font="Ado; 30" valign="center" halign="left" noWrap="1" backgroundColor="white" shadowColor="#000000" shadowOffset="-1,-1" transparent="1" foregroundColor="white">
-      <convert type="ServiceName2">%N</convert>
-    </widget>
+  <convert type="ServiceName2">%N</convert>
+</widget>
     <eLabel name="" position="7,682" size="119,32" text="Next:" halign="left" font="Regular; 24" transparent="1" noWrap="1" backgroundColor="bpPodloga" valign="center" foregroundColor="cyan" />
     <widget backgroundColor="background" font="Ado; 28" halign="right" valign="top" noWrap="1" position="976,678" render="TypeLabel" typeSpeed="1500" typeCaret="_" size="292,37" source="session.CurrentService" transparent="1" zPosition="7">
       <convert type="ServiceName">Provider</convert>
@@ -557,10 +554,10 @@
       <convert type="ServiceInfo">Is4K</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-<widget source="session.CurrentService" render="Pixmap" pixmap="Adrenalinnrw_Mod_RED/icons/ico_iptv_on.png" position="1189,630" size="81,45" zPosition="2" alphatest="blend">
-			<convert type="ServiceInfo">IsStream</convert>
-			<convert type="ConditionalShowHide" />
-		</widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="Adrenalinnrw_Mod_RED/icons/ico_iptv_on.png" position="1189,630" size="81,45" zPosition="2" alphatest="blend">
+      <convert type="ServiceInfo">IsStream</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
     <widget source="session.CurrentService" render="Pixmap" pixmap="Adrenalinnrw_Mod_RED/icons/ico_dolby_on.png" position="949,630" size="81,40" zPosition="3" alphatest="blend">
       <convert type="ServiceInfo">IsMultichannel</convert>
       <convert type="ConditionalShowHide" />
@@ -4409,32 +4406,32 @@ MultiContentEntryPixmapAlphaTest(pos = (5, 5), size = (100, 40), png = 2),
     <ePixmap name="bPPodloga" position="193,60" size="894,600" pixmap="Adrenalinnrw_Mod_RED/background/back_mon.png" zPosition="-3" />
     <ePixmap pixmap="Adrenalinnrw_Mod_RED/buttons/buttons.png" position="224,602" size="420,20" alphatest="blend" />
   </screen>
-<screen name="SoftcamPanel" position="0,0" size="1280,720" title="Softcam Panel" flags="wfNoBorder" backgroundColor="transparent">
-  <ePixmap position="0,0" size="1280,720" zPosition="-1" pixmap="Adrenalinnrw_Mod_RED/menu_bg7.png" />
-  <ePixmap pixmap="Adrenalinnrw_Mod_RED/icons/softcam.png" zPosition="2" position="835,283" size="250,250" alphatest="blend" transparent="1" />
-  <widget source="Title" render="Label" halign="left" position="40,39" size="536,103" font="Regular; 78" backgroundColor="background1" transparent="1" />
-  <widget source="global.CurrentTime" render="Label" position="1115,104" size="121,29" font="Regular; 25" backgroundColor="transpBlack" transparent="1" foregroundColor="lightgrey" halign="center">
-    <convert type="ClockToText">Format:%d.%m.%Y</convert>
-  </widget>
-  <widget source="global.CurrentTime" render="Label" position="1110,60" size="130,45" font="Regular; 45" backgroundColor="transpBlack" transparent="1" foregroundColor="lightgrey" halign="center" valign="center">
-    <convert type="ClockToText">Default</convert>
-  </widget>
-  <eLabel backgroundColor="grey" position="50,316" size="642,1" zPosition="1" foregroundColor="background1" />
-  <eLabel backgroundColor="grey" position="50,359" size="642,1" zPosition="1" foregroundColor="background1" />
-  <widget font="Regular;18" name="camcount" position="627,326" size="60,25" transparent="1" />
-  <widget name="config" position="50,209" size="642,100" transparent="1" font="Replacement; 22" backgroundColor="background1" />
-  <ePixmap pixmap="Adrenalinnrw_Mod_RED/buttons/red.png" position="49,159" size="30,30" alphatest="blend" />
-  <ePixmap pixmap="Adrenalinnrw_Mod_RED/buttons/green.png" position="211,159" size="30,30" alphatest="blend" />
-  <ePixmap pixmap="Adrenalinnrw_Mod_RED/buttons/yellow.png" position="373,159" size="30,30" alphatest="blend" />
-  <ePixmap pixmap="Adrenalinnrw_Mod_RED/buttons/blue.png" position="538,159" size="30,30" alphatest="blend" />
-  <widget font="Replacement; 24" halign="center" name="key_red" position="82,158" size="120,35" transparent="1" valign="center" zPosition="2" backgroundColor="background1" />
-  <widget font="Replacement; 24" halign="center" name="key_green" position="246,158" size="120,35" transparent="1" valign="center" zPosition="2" backgroundColor="background1" />
-  <widget font="Replacement; 24" halign="center" name="key_yellow" position="410,157" size="120,35" transparent="1" valign="center" zPosition="2" backgroundColor="background1" />
-  <widget font="Replacement; 24" halign="center" name="key_blue" position="572,157" size="120,35" transparent="1" valign="center" zPosition="2" backgroundColor="background1" />
-  <widget font="Replacement; 22" name="actifcam" position="53,322" size="303,28" transparent="1" backgroundColor="background1" />
-  <widget font="Regular; 22" name="actifcam2" position="370,322" size="246,32" transparent="1" backgroundColor="transpBlack" />
-  <widget font="Replacement; 22" name="ecminfo" position="50,364" size="642,308" transparent="1" backgroundColor="background1" foregroundColor="grey" />
-</screen>
+  <screen name="SoftcamPanel" position="0,0" size="1280,720" title="Softcam Panel" flags="wfNoBorder" backgroundColor="transparent">
+    <ePixmap position="0,0" size="1280,720" zPosition="-1" pixmap="Adrenalinnrw_Mod_RED/menu_bg7.png" />
+    <ePixmap pixmap="Adrenalinnrw_Mod_RED/icons/softcam.png" zPosition="2" position="835,283" size="250,250" alphatest="blend" transparent="1" />
+    <widget source="Title" render="Label" halign="left" position="40,39" size="536,103" font="Regular; 78" backgroundColor="background1" transparent="1" />
+    <widget source="global.CurrentTime" render="Label" position="1115,104" size="121,29" font="Regular; 25" backgroundColor="transpBlack" transparent="1" foregroundColor="lightgrey" halign="center">
+      <convert type="ClockToText">Format:%d.%m.%Y</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" position="1110,60" size="130,45" font="Regular; 45" backgroundColor="transpBlack" transparent="1" foregroundColor="lightgrey" halign="center" valign="center">
+      <convert type="ClockToText">Default</convert>
+    </widget>
+    <eLabel backgroundColor="grey" position="50,316" size="642,1" zPosition="1" foregroundColor="background1" />
+    <eLabel backgroundColor="grey" position="50,359" size="642,1" zPosition="1" foregroundColor="background1" />
+    <widget font="Regular;18" name="camcount" position="627,326" size="60,25" transparent="1" />
+    <widget name="config" position="50,209" size="642,100" transparent="1" font="Replacement; 22" backgroundColor="background1" />
+    <ePixmap pixmap="Adrenalinnrw_Mod_RED/buttons/red.png" position="49,159" size="30,30" alphatest="blend" />
+    <ePixmap pixmap="Adrenalinnrw_Mod_RED/buttons/green.png" position="211,159" size="30,30" alphatest="blend" />
+    <ePixmap pixmap="Adrenalinnrw_Mod_RED/buttons/yellow.png" position="373,159" size="30,30" alphatest="blend" />
+    <ePixmap pixmap="Adrenalinnrw_Mod_RED/buttons/blue.png" position="538,159" size="30,30" alphatest="blend" />
+    <widget font="Replacement; 24" halign="center" name="key_red" position="82,158" size="120,35" transparent="1" valign="center" zPosition="2" backgroundColor="background1" />
+    <widget font="Replacement; 24" halign="center" name="key_green" position="246,158" size="120,35" transparent="1" valign="center" zPosition="2" backgroundColor="background1" />
+    <widget font="Replacement; 24" halign="center" name="key_yellow" position="410,157" size="120,35" transparent="1" valign="center" zPosition="2" backgroundColor="background1" />
+    <widget font="Replacement; 24" halign="center" name="key_blue" position="572,157" size="120,35" transparent="1" valign="center" zPosition="2" backgroundColor="background1" />
+    <widget font="Replacement; 22" name="actifcam" position="53,322" size="303,28" transparent="1" backgroundColor="background1" />
+    <widget font="Regular; 22" name="actifcam2" position="370,322" size="246,32" transparent="1" backgroundColor="transpBlack" />
+    <widget font="Replacement; 22" name="ecminfo" position="50,364" size="642,308" transparent="1" backgroundColor="background1" foregroundColor="grey" />
+  </screen>
   <screen name="EsiPanel" position="0,0" size="1280,720" title="EsiPanel" flags="wfNoBorder" backgroundColor="transparent">
     <ePixmap position="0,0" size="1280,720" zPosition="-1" pixmap="Adrenalinnrw_Mod_RED/menu_bg5.png" />
     <ePixmap position="48,160" size="650,450" zPosition="5" pixmap="Adrenalinnrw_Mod_RED/uplist.png" alphatest="blend" transparent="1" />
@@ -4449,26 +4446,26 @@ MultiContentEntryPixmapAlphaTest(pos = (5, 5), size = (100, 40), png = 2),
     <widget name="Mlist" position="48,160" size="650,450" zPosition="5" scrollbarMode="showNever" transparent="1" />
     <widget name="label1" position="200,670" size="641,80" font="Regular; 35" transparent="1" foregroundColor="lightgrey" halign="center" backgroundColor="black" />
   </screen>
-<screen name="MSNWeatherPlugin" position="0,0" size="1280,720" title="Weather Plugin" flags="wfNoBorder" backgroundColor="transparent">
-  <ePixmap pixmap="Adrenalinnrw_Mod_RED/weatherback.png" position="0,0" size="1280,720" zPosition="-1" alphatest="on" />
-  <widget render="Label" source="caption" position="66,27" size="573,57" font="Replacement; 30" zPosition="1" transparent="1" backgroundColor="black" foregroundColor="white" halign="left" valign="center" />
-  <widget render="Label" source="observationtime" position="475,383" zPosition="1" size="244,30" font="bold; 18" transparent="1" halign="right" backgroundColor="black" valign="center" foregroundColor="un808888" />
-  <widget render="Label" source="observationpoint" position="65,383" zPosition="1" size="404,30" font="bold; 18" transparent="1" halign="left" backgroundColor="black" valign="center" foregroundColor="un808888" />
-  <widget name="currenticon" position="160,96" zPosition="1" size="175,120" alphatest="blend" transparent="1" />
-  <widget render="Label" source="currentTemp" position="358,96" zPosition="1" size="239,120" font="Replacement; 75" transparent="1" backgroundColor="black" halign="center" valign="top" />
-  <widget render="Label" source="feelsliketemp" position="393,189" zPosition="1" size="173,27" font="Replacement; 22" transparent="1" backgroundColor="black" halign="center" />
-  <widget render="Label" source="condition" position="71,245" zPosition="1" size="382,35" font="Replacement; 22" transparent="1" backgroundColor="black" halign="left" valign="center" foregroundColor="grey" />
-  <widget render="Label" source="wind_condition" position="71,289" zPosition="1" size="218,35" font="Replacement; 22" transparent="1" backgroundColor="black" halign="left" valign="center" foregroundColor="grey" />
-  <widget render="Label" source="humidity" position="71,338" zPosition="1" size="218,35" font="Replacement; 22" valign="center" transparent="1" backgroundColor="black" halign="left" foregroundColor="grey" />
-  <widget render="Label" source="weekday2" position="35,434" zPosition="1" size="205,57" halign="center" valign="center" font="Replacement; 20" transparent="1" backgroundColor="black" />
-  <widget name="weekday2_icon" position="78,507" zPosition="1" size="115,80" alphatest="blend" transparent="1" />
-  <widget render="Label" source="weekday2_temp" position="36,603" zPosition="1" size="202,75" halign="center" valign="center" font="Replacement; 20" transparent="1" backgroundColor="black" />
-  <widget render="Label" source="weekday3_temp" position="271,603" zPosition="1" size="202,75" halign="center" valign="center" font="Replacement; 20" transparent="1" backgroundColor="black" />
-  <widget name="weekday3_icon" position="313,507" zPosition="1" size="115,80" alphatest="blend" transparent="1" />
-  <widget render="Label" source="weekday3" position="270,434" zPosition="1" size="205,57" halign="center" valign="center" font="Replacement; 20" transparent="1" backgroundColor="black" />
-  <widget render="Label" source="weekday4_temp" position="500,603" zPosition="1" size="202,75" halign="center" valign="center" font="Replacement; 20" transparent="1" backgroundColor="black" />
-  <widget name="weekday4_icon" position="549,507" zPosition="1" size="115,80" alphatest="blend" transparent="1" />
-  <widget render="Label" source="weekday4" position="499,433" zPosition="1" size="205,57" halign="center" valign="center" font="Replacement; 20" transparent="1" backgroundColor="black" />
-  <widget render="Label" source="statustext" position="235,136" zPosition="0" size="0,465" font="Regular;20" halign="center" valign="center" transparent="1" backgroundColor="background" />
-</screen>
+  <screen name="MSNWeatherPlugin" position="0,0" size="1280,720" title="Weather Plugin" flags="wfNoBorder" backgroundColor="transparent">
+    <ePixmap pixmap="Adrenalinnrw_Mod_RED/weatherback.png" position="0,0" size="1280,720" zPosition="-1" alphatest="on" />
+    <widget render="Label" source="caption" position="66,27" size="573,57" font="Replacement; 30" zPosition="1" transparent="1" backgroundColor="black" foregroundColor="white" halign="left" valign="center" />
+    <widget render="Label" source="observationtime" position="475,383" zPosition="1" size="244,30" font="bold; 18" transparent="1" halign="right" backgroundColor="black" valign="center" foregroundColor="un808888" />
+    <widget render="Label" source="observationpoint" position="65,383" zPosition="1" size="404,30" font="bold; 18" transparent="1" halign="left" backgroundColor="black" valign="center" foregroundColor="un808888" />
+    <widget name="currenticon" position="160,96" zPosition="1" size="175,120" alphatest="blend" transparent="1" />
+    <widget render="Label" source="currentTemp" position="358,96" zPosition="1" size="239,120" font="Replacement; 75" transparent="1" backgroundColor="black" halign="center" valign="top" />
+    <widget render="Label" source="feelsliketemp" position="393,189" zPosition="1" size="173,27" font="Replacement; 22" transparent="1" backgroundColor="black" halign="center" />
+    <widget render="Label" source="condition" position="71,245" zPosition="1" size="382,35" font="Replacement; 22" transparent="1" backgroundColor="black" halign="left" valign="center" foregroundColor="grey" />
+    <widget render="Label" source="wind_condition" position="71,289" zPosition="1" size="218,35" font="Replacement; 22" transparent="1" backgroundColor="black" halign="left" valign="center" foregroundColor="grey" />
+    <widget render="Label" source="humidity" position="71,338" zPosition="1" size="218,35" font="Replacement; 22" valign="center" transparent="1" backgroundColor="black" halign="left" foregroundColor="grey" />
+    <widget render="Label" source="weekday2" position="35,434" zPosition="1" size="205,57" halign="center" valign="center" font="Replacement; 20" transparent="1" backgroundColor="black" />
+    <widget name="weekday2_icon" position="78,507" zPosition="1" size="115,80" alphatest="blend" transparent="1" />
+    <widget render="Label" source="weekday2_temp" position="36,603" zPosition="1" size="202,75" halign="center" valign="center" font="Replacement; 20" transparent="1" backgroundColor="black" />
+    <widget render="Label" source="weekday3_temp" position="271,603" zPosition="1" size="202,75" halign="center" valign="center" font="Replacement; 20" transparent="1" backgroundColor="black" />
+    <widget name="weekday3_icon" position="313,507" zPosition="1" size="115,80" alphatest="blend" transparent="1" />
+    <widget render="Label" source="weekday3" position="270,434" zPosition="1" size="205,57" halign="center" valign="center" font="Replacement; 20" transparent="1" backgroundColor="black" />
+    <widget render="Label" source="weekday4_temp" position="500,603" zPosition="1" size="202,75" halign="center" valign="center" font="Replacement; 20" transparent="1" backgroundColor="black" />
+    <widget name="weekday4_icon" position="549,507" zPosition="1" size="115,80" alphatest="blend" transparent="1" />
+    <widget render="Label" source="weekday4" position="499,433" zPosition="1" size="205,57" halign="center" valign="center" font="Replacement; 20" transparent="1" backgroundColor="black" />
+    <widget render="Label" source="statustext" position="235,136" zPosition="0" size="0,465" font="Regular;20" halign="center" valign="center" transparent="1" backgroundColor="background" />
+  </screen>
 </skin>
