@@ -184,7 +184,7 @@
     <ePixmap name="bPPodloga" position="0,2" size="1280,720" pixmap="Adrenalinnrw_Mod_RED/infobar/infobar_down1.png" zPosition="-3" alphatest="off" />
     <ePixmap position="4,664" size="520,19" zPosition="5" pixmap="Adrenalinnrw_Mod_RED/infobar/infobar_event_slider_back1.png" alphatest="blend" transparent="1" />
     <widget source="global.CurrentTime" borderWidth="2" render="Label" position="896,675" size="350,37" font="Ado; 28" valign="center" halign="left" backgroundColor="black" transparent="1" foregroundColor="foreground" zPosition="2">
-  <convert type="ClockToText">Format:%a, %e. %B %Y | %H:%M</convert>
+  <convert type="ClockToText">Format:%H:%M</convert>
 </widget>
     <widget position="74,590" size="460,36" source="session.CurrentService" render="TypeLabel" typeSpeed="1500" typeCaret="_" font="Ado; 30" valign="center" halign="left" noWrap="1" backgroundColor="white" shadowColor="#000000" shadowOffset="-1,-1" transparent="1" foregroundColor="white">
       <convert type="ServiceName2">%N</convert>
