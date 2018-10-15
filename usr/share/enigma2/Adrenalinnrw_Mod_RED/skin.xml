@@ -1527,7 +1527,7 @@ MultiContentEntryText(pos = (50, 28), size = (480, 40), font = 1, flags = RT_HAL
   </screen>
   <screen name="Standby" position="0,0" size="1307,720" title="Standby" flags="wfNoBorder" backgroundColor="black">
     <eLabel name="" position="441,44" size="298,26" text="in Standby mode. :)" backgroundColor="black" foregroundColor="un666666" transparent="1" font="Console; 20" zPosition="1" />
-    <ePixmap name="" position="271,34" size="170,38" pixmap="DreamOSatHD_Adrenalinnrw_Mod/logo/pb_stnby.png" />
+    <ePixmap name="" position="271,34" size="170,38" pixmap="Adrenalinnrw_Mod/logo/pb_stnby.png" />
     <eLabel name="" position="18,44" size="249,26" text="Hello, i'm Adrenalinrw" backgroundColor="black" foregroundColor="un666666" transparent="1" font="Console; 20" zPosition="1" halign="right" />
     <eLabel text="Biz Pitho Largestto ve Remy Emek Hirsizlariyiz!!  Bu Arayüz @drenalinnrw ye aittir biz bunu calip ismini degistirdik cünkü biz serefsiziz.. Yapabildigimiz tek sey bu baskasinin yaptiklarini calmak..." position="53,83" size="587,286" font="Ado; 28" halign="center" backgroundColor="bpPodloga" transparent="1" foregroundColor="bpExtra" zPosition="10" />
   </screen>
