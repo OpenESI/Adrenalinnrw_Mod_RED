@@ -165,13 +165,13 @@
     <widget source="session.Event_Next" render="Label" borderWidth="2" position="70,683" size="450,30" halign="left" font="Ado; 22" foregroundColor="grey" backgroundColor="black" transparent="1" valign="center" noWrap="1">
       <convert type="EventName">Name</convert>
     </widget>
-    <widget source="session.Event_Now" render="Label" borderWidth="2" position="73,628" size="400,40" halign="left" font="Ado; 22" transparent="1" noWrap="1" backgroundColor="black" valign="center" zPosition="1" foregroundColor="red_tux1">
+    <widget source="session.Event_Now" render="Label" borderWidth="2" position="63,627" size="405,40" halign="left" font="Ado; 22" transparent="1" noWrap="1" backgroundColor="black" valign="center" zPosition="1" foregroundColor="red_tux1">
       <convert type="EventName">Name</convert>
     </widget>
-    <widget source="session.Event_Now" render="Label" position="408,628" size="110,40" halign="right" font="Ado; 20" backgroundColor="bpWindowTraka" transparent="1" valign="center" zPosition="1">
-      <convert type="EventTime">Remaining</convert>
-      <convert type="RemainingToText">InMinutes</convert>
-    </widget>
+    <widget source="session.Event_Now" render="Label" position="450,626" size="81,40" halign="right" font="Ado; 20" backgroundColor="bpWindowTraka" transparent="1" valign="center" zPosition="1">
+  <convert type="EventTime">Remaining</convert>
+  <convert type="RemainingToText">InMinutes</convert>
+</widget>
     <widget source="session.Event_Now" render="Progress" pixmap="Adrenalinnrw_Mod_RED/infobar/infobar_event_slider1.png" position="6,668" size="520,19" zPosition="8" transparent="1">
       <convert type="EventTime">Progress</convert>
     </widget>
@@ -278,7 +278,7 @@
       <convert type="ServiceInfo">Is4K</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.CurrentService" render="Pixmap" pixmap="Adrenalinnrw_Mod_RED/icons/ico_iptv_on.png" position="860,630" size="81,45" zPosition="2" alphatest="blend">
+    <widget source="session.CurrentService" render="Pixmap" pixmap="Adrenalinnrw_Mod_RED/icons/ico_iptv_on.png" position="869,634" size="81,45" zPosition="2" alphatest="blend">
       <convert type="ServiceInfo">IsStream</convert>
       <convert type="ConditionalShowHide" />
     </widget>
@@ -451,14 +451,14 @@
     <widget source="session.Event_Now" render="Label" borderWidth="2" position="73,628" size="400,40" halign="left" font="Ado; 22" transparent="1" noWrap="1" backgroundColor="black" valign="center" zPosition="1" foregroundColor="bpExtra">
       <convert type="EventName">Name</convert>
     </widget>
-    <widget source="session.Event_Now" render="Label" position="408,628" size="110,40" halign="right" font="Ado; 20" foregroundColor="un21e2e2e2" backgroundColor="bpWindowTraka" transparent="1" valign="center" zPosition="1">
-      <convert type="EventTime">Remaining</convert>
-      <convert type="RemainingToText">InMinutes</convert>
-    </widget>
+    <widget source="session.Event_Now" render="Label" position="426,628" size="110,40" halign="right" font="Ado; 20" foregroundColor="un21e2e2e2" backgroundColor="bpWindowTraka" transparent="1" valign="center" zPosition="1">
+  <convert type="EventTime">Remaining</convert>
+  <convert type="RemainingToText">InMinutes</convert>
+</widget>
     <widget source="session.Event_Now" render="Progress" pixmap="Adrenalinnrw_Mod_RED/infobar/infobar_event_slider1.png" position="6,668" size="520,19" zPosition="8" transparent="1">
       <convert type="EventTime">Progress</convert>
     </widget>
-    <widget source="session.RecordState" render="Pixmap" position="892,625" size="48,48" pixmap="Adrenalinnrw_Mod_RED/infobar/recording.png" alphatest="blend">
+    <widget source="session.RecordState" render="Pixmap" position="906,671" size="48,48" pixmap="Adrenalinnrw_Mod_RED/infobar/recording.png" alphatest="blend">
       <convert type="ConditionalShowHide">Blink</convert>
     </widget>
     <ePixmap position="4,664" size="520,19" zPosition="5" pixmap="Adrenalinnrw_Mod_RED/infobar/infobar_event_slider_back1.png" alphatest="blend" transparent="1" />
@@ -554,7 +554,7 @@
       <convert type="ServiceInfo">Is4K</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.CurrentService" render="Pixmap" pixmap="Adrenalinnrw_Mod_RED/icons/ico_iptv_on.png" position="1189,630" size="81,45" zPosition="2" alphatest="blend">
+    <widget source="session.CurrentService" render="Pixmap" pixmap="Adrenalinnrw_Mod_RED/icons/ico_iptv_on.png" position="869,634" size="81,45" zPosition="2" alphatest="blend">
       <convert type="ServiceInfo">IsStream</convert>
       <convert type="ConditionalShowHide" />
     </widget>
